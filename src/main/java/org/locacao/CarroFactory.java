@@ -11,7 +11,7 @@ public class CarroFactory {
         } catch (Exception ex) {
             throw new IllegalArgumentException("Carro inexistente");
         }
-        if (!(objeto instanceof IServico)) {
+        if (!(objeto instanceof Carro)) {
             throw new IllegalArgumentException("Carro inválido");
         }
         return (Carro) objeto;
